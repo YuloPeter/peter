@@ -1,0 +1,1 @@
+"F:\Tool\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-5guk52e984374d2b --n quickstartFunctions --r --project "E:\work_space\uniapp\wyy-cloud" --report_first --report

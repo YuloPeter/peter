@@ -1,0 +1,32 @@
+<!--pages/play/play.wxml-->
+<!-- <text>pages/play/play.wxml</text> -->
+<view id="bg">
+    <image src="{{imgurl}}" mode="" class="bg"/>
+</view>
+<view class="name">{{name}}</view>
+<swiper class="main"> 
+    <swiper-item class="item imgitem">
+        <image class="{{action.method=='play'?'':'clear'}}" src="{{imgurl}}"/>
+    </swiper-item>
+    <swiper-item class="item txtbox">
+    <scroll-view class="txt_wrap" scroll-y='false' scroll-top="{{top}}">
+        <view wx:for-index='in' wx:for="{{lrcList}}" wx:key="index" class="{{in==index?'color':''}}">{{item[1]}}</view>
+    </scroll-view>
+    </swiper-item>
+</swiper>
+<view class="timebox">
+    <view class="play_time">
+        {{playtime}}
+    </view>
+    <slider bindchange="sliderchange" value="{{move}}" max="{{max}}" block-size="12" activeColor="#c20c0c"/>
+    <view class="end_time">
+        {{timelength}}
+    </view>
+</view>
+<view class="btnBox">
+    <image bindtap="changemode" src="../img/{{mode=='loop'?'icon':'icon1'}}.png" mode=""/>
+    <image bindtap="prevSong" src="../img/prevesong.png" mode=""/>
+    <image bindtap="playdate" src="../img/{{action.method=='play'?'zanting':'bofang'}}.png" mode=""/>
+    <image bindtap="nextSong" src="../img/nextsong.png" mode=""/>
+</view>
+<audio bindended="changeMusic" bindtimeupdate="timechange" action="{{action}}" src="http://music.163.com/song/media/outer/url?id={{musicId}}.mp3"></audio>

@@ -1,0 +1,112 @@
+/* pages/play/play.wxss */
+#bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.bg{
+    position: absolute;
+    width: 170%;
+    height: 100%;
+    opacity: 0.5;
+}
+.name{
+    text-align: center;
+    font-size: 65rpx;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 200rpx;
+    line-height: 200rpx;
+}
+.main{
+    width: 100%;
+    height: 850rpx;
+    /* background: pink; */
+    position: relative;
+}
+.imgitem image{
+    width: 450rpx;
+    height: 450rpx;
+    border-radius: 50%;
+    border: 70rpx solid #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: playimg 20s linear infinite;
+    box-shadow: 3rpx 3rpx 20rpx black;
+
+}
+@keyframes playimg{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.btnBox{
+    width: 100%;
+    height: 120rpx;
+    background: #c20c0c;
+    position: fixed;
+    bottom: 0;
+    padding:40rpx 20rpx;
+}
+.btnBox image{
+    display: block;
+    width: 130rpx;
+    height: 130rpx;
+    float: left;
+    margin: 0 20rpx;
+}
+.imgitem .clear{
+    animation-play-state: paused;
+}
+.txtbox{
+    width: 100%;
+    height: 600rpx;
+    /* background: pink; */
+    /* position: absolute; */
+}
+.txtbox .txt_wrap{
+    height: 760rpx;
+    /* background: skyblue; */
+}
+.txt_wrap view{
+    text-align: center;
+    color: #c6c6c6;
+    height: 48rpx;
+    line-height: 48rpx;
+    font-size: 32rpx;
+}
+.txt_wrap .color{
+    color:white
+}
+.timebox{
+    width: 100%;
+    height: 100rpx;
+    /* background: skyblue; */
+    position: fixed;
+    bottom: 185rpx;
+    /* padding: 0 50rpx; */
+}
+.timebox view,.timebox slider{
+    float: left;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.timebox view{
+    width: 20%;
+    text-align: center;
+    color: white;
+}
+.timebox slider{
+    width: 60%;
+    margin: 0;
+    margin-top: 38rpx;
+}

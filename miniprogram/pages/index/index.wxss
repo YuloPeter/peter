@@ -1,0 +1,94 @@
+/**index.wxss**/
+#banner image{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.list_wrap{
+    width: 100%;
+    height: 160rpx;
+    /* background-color: pink; */
+    padding: 10rpx 0;
+    box-shadow: 0rpx 1rpx 2rpx #888;
+    margin-bottom: 1rpx;
+}
+.list_wrap view{
+    float: left;
+}
+.list_wrap .list_l{
+    width: 160rpx;
+    height: 160rpx;
+    /* background-color: orange; */
+    padding-left: 55rpx;
+    padding-top: 10rpx;
+}
+.list_wrap .list_c{ 
+    width: 300rpx;
+    height: 160rpx;
+    /* background-color: aqua; */
+}
+.list_wrap .list_r{
+    width: 160rpx;
+    height: 145rpx;
+    /* background-color: purple; */
+    padding-top: 15rpx;
+    padding-left: 25rpx;
+}
+.list_l image{
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 23rpx;
+}
+.list_c view{
+    width: 300rpx;
+    padding-left: 60rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list_c .musicName{
+    font-size: 30rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.list_c .name{
+    font-size: 26rpx;
+    color: #555555;
+}
+.list_r image{
+    width: 120rpx;
+    height: 120rpx;
+}
+.searchBox{
+    width: 85%;
+    height: 100rpx;
+    background-color: #f1f1f1;
+    margin: 10rpx auto;
+    border-radius: 80rpx;
+    overflow: hidden;
+}
+.searchBox .txt{
+    width: 70%;
+    height: 100rpx;
+    /* background: skyblue; */
+    padding-left: 10%;
+    float: left;
+}
+.searchBox .btn{
+    width: 20%;
+    height: 100rpx;
+    float: left;
+    /* background: yellow; */
+    position: relative;
+}
+.btn image{
+    width: 65%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

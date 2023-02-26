@@ -1,0 +1,20 @@
+<view class="info">
+    <van-image
+  round
+  width="170rpx"
+  height="170rpx"
+  bindtap="tapavatar"
+  src="{{userInfo.avatarUrl}}"
+  />
+  <text bindtap="tapLogin">{{userInfo.nickName}}</text>
+</view>
+<van-grid>
+  <van-grid-item icon="passed" text="立即签到" dot/>
+  <van-grid-item icon="gift-o" text="我的福利" info="99+"/>
+  <van-grid-item icon="clock-o" text="听歌历史" />
+  <van-grid-item icon="shop-collect-o" text="积分商城" />
+</van-grid>
+<van-cell title="设置"  icon='setting-o' is-link />
+<van-cell title="收藏" icon='sign'  is-link />
+
+

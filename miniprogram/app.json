@@ -1,0 +1,30 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/me/me",
+        "pages/play/play"
+    ],
+    "window": {
+        "enablePullDownRefresh": true,
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#c20c0c",
+        "navigationBarTitleText": "网抑云",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "selectedColor": "#c20c0c",
+        "list": [{
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "image/hui.png",
+          "selectedIconPath": "/image/1.png"
+        }, {
+          "pagePath": "pages/me/me",
+          "text": "我的",
+          "iconPath": "image/me_disable.png",
+          "selectedIconPath": "image/me_enable.png"
+        }]
+      },
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}
